@@ -1,0 +1,65 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: darkgoldenrod;
+}
+h1{
+  font-style: italic;
+  text-align: center;
+}
+
+/* section parent */
+.partyList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap:20px;
+  width:90%;
+  height: auto;
+  margin: auto;
+  background-color: goldenrod;
+}
+.divParty{  
+  margin: 10px;
+  padding: 5px 25px 5px 5px;
+  width:400px;
+  max-height:330px;
+  border: 5px double brown;
+  border-radius: 25px;
+  background-color:chocolate;
+}
+/* list items */
+.listItem{
+  list-style-type: none;
+  width:auto;
+}
+div:hover {
+  background-color:rgb(160, 137, 8);
+}
+.boldText{
+  font-weight: bold;
+}
+.partyName{
+  color:orange;
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+}
+.locPin {
+  width: 1em;
+  height: 1em ;
+  background-color: yellow ;
+  border-radius: 60px 60px 0px 60px ;
+  position:relative ;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+.locPin::after {
+  content: "" ;
+  width: 0.5em ;
+  height: 0.5em ;
+  background:gray ;
+  position: absolute ;
+  left: 26% ;
+  top: 26% ;
+  border-radius: 60px ;
+}
